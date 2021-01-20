@@ -9,6 +9,7 @@ const Menu = ({ name, options, handler }) => {
     <>
       <div
         id="mod-container"
+        data-testid={`mod-${name}`}
         onKeyDown={() => setActive(!active)}
         onClick={() => setActive(!active)}
         role="button"
